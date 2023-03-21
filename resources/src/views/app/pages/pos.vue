@@ -190,10 +190,19 @@
                     <b-col lg="12" md="12" sm="12">
                       <validation-provider name="warehouse" :rules="{ required: true}">
                         <b-form-group slot-scope="{ valid, errors }" class="mt-2">
-                          <v-select
+                          <!-- <v-select
                             :class="{'is-invalid': !!errors.length}"
                             :state="errors[0] ? false : (valid ? true : null)"
                             :disabled="details.length > 0"
+                            @input="Selected_Warehouse"
+                            v-model="sale.warehouse_id"
+                            :reduce="label => label.value"
+                            :placeholder="$t('Choose_Warehouse')"
+                            :options="warehouses.map(warehouses => ({label: warehouses.name, value: warehouses.id}))"
+                          /> -->
+                          <v-select
+                            :class="{'is-invalid': !!errors.length}"
+                            :state="errors[0] ? false : (valid ? true : null)"
                             @input="Selected_Warehouse"
                             v-model="sale.warehouse_id"
                             :reduce="label => label.value"
