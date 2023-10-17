@@ -6,8 +6,6 @@
 /node_modules
 /public/hot
 /public/storage
-/storage/*.key
-/storage/framework/sessions
 /vendor
 /Complete-POS-Management-and-Inventory-System-Free-Download-UPDATED-11522.zip
 .env

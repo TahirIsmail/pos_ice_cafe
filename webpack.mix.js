@@ -16,7 +16,7 @@ const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 
 
 mix.js('resources/src/main.js', 'public').js('resources/src/login.js', 'public')
-    // .sass('resources/src/assets/styles/sass/globals/globals.scss', 'public/css')
+    //.sass('resources/src/assets/styles/sass/globals/globals.scss', 'public/css')
     .vue();
 
     mix.webpackConfig({
